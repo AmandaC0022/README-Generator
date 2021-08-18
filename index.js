@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs'); 
+const markdownTemplate = require('./utils/generateMarkdown.js'); 
 
 inquirer
   .prompt([
@@ -10,12 +11,21 @@ inquirer
     // Use user feedback for... whatever!!
   })
   .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
+    if (error) {
+      console.log(error); 
     }
   });
+
+//this will write the README file 
+//   function writeToFile(fileName, data) {
+
+//   }
+
+//intializes the app
+// funtion init() {
+
+// }
+// init(); 
 
 //   The README should include: 
 //   Project Title 
