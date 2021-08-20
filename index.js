@@ -59,9 +59,10 @@ inquirer
     },
   ])
   .then((answers) => {
-    // Use user feedback for... whatever!!
-    generateMarkdown(answers); 
-  })
+    fs.writeFile('./README.md', generateMarkdown(answers), () => {
+      console.log("file was written"); 
+    }
+  )
   .catch((error) => {
     if (error) {
       console.log(error); 
@@ -69,9 +70,9 @@ inquirer
   });
 
 //this will write the README file 
-//   function writeToFile(fileName, data) {
-
-//   }
+  // function writeToFile(fileName, data) {
+  //   generateMarkdown(); 
+  // }
 
 //intializes the app
 // funtion init() {
