@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AmandaC0022/README-Generator#readme",
   "dependencies": {
-    "inquirer": "^8.1.2"
+    "inquirer": "^8.1.2",
+    "moment": "^2.29.1"
   }
 }

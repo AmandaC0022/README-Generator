@@ -38,7 +38,7 @@ inquirer
     },
     {
       type:'input', 
-      name: 'contribution', 
+      name: 'contributing', 
       message:'How would you like others to contribute to this project?', 
     },
     {
