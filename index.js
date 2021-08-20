@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs'); 
 const markdownTemplate = require('./utils/generateMarkdown.js'); 
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 inquirer
   .prompt([
@@ -59,7 +60,7 @@ inquirer
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
-
+    generateMarkdown(answers); 
   })
   .catch((error) => {
     if (error) {
