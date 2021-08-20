@@ -1,9 +1,9 @@
-# t
+# w
 
-
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description: 
-t
+w
 
   ## Table of Contents 
   1. [Installation](#installation)
@@ -14,24 +14,24 @@ t
   6. [Tests](#tests)
   7. [Questions](#questions)
 
-  ## Installation <a name="installation"></a>  
-  t 
+  ## Installation  
+  w 
 
   ## Usage  
-  t
+  w
 
   ## Credits 
-  t
+  w
 
   ## License 
-  https://opensource.org/licenses/MIT
+  https://www.gnu.org/licenses/gpl-3.0
 
   ## Contribution
-  t
+  w
   
   ## Tests 
-  t
+  w
   
   ## Questions 
-  t 
-  Please contact me using my GitHub profile: t
+  w 
+  Please contact me using my GitHub profile: w

@@ -1,24 +1,21 @@
 // // returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
-  if(license) {
-    return `![License](https://img.shields.io/badge/License-${license}-yellow.svg)`
-  } else {
-    return " "
+  // if(license) {
+  //   return `![License](https://img.shields.io/badge/License-${license}-yellow.svg)`
+  // } else {
+  //   return " "
+  // }
+  if (license === 'MIT') {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`; 
   }
+  if (license === 'BSD') {
+    return `[![License: BSD](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`; 
+  }
+  if (license === 'GLP') {
+    return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`; 
+  } 
+  return ' '
 }
-
-// var license = data.license 
-// if (license === 'MIT') {
-//   return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`; 
-// }
-// if (license === 'BSD') {
-//   return `[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`; 
-// }
-// if (license === 'GLP') {
-//   return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`; 
-// } 
-// If there is no license, return an empty string
-
 
 // returns the license link
 function renderLicenseLink(license) { 
@@ -46,7 +43,7 @@ return ' ';
 function generateMarkdown(data) {
   return `# ${data.title}
 
-
+${renderLicenseBadge(data.license)}
 
 ## Description: 
 ${data.description}
@@ -60,7 +57,7 @@ ${data.description}
   6. [Tests](#tests)
   7. [Questions](#questions)
 
-  ## Installation <a name="installation"></a>  
+  ## Installation  
   ${data.installation} 
 
   ## Usage  
