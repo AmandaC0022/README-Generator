@@ -4,6 +4,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 inquirer
   .prompt([
+    /* Questions for User */
     {
       type:'input', 
       name: 'title', 
@@ -54,25 +55,25 @@ inquirer
       type:'input', 
       name: 'github', 
       message:'What is your GitHub username?', 
-    },
+    }
   ])
   .then((answers) => {
-    // fs.writeFile('./README.md', generateMarkdown(answers), () => {
-    //   console.log("file was written"); 
-    // })
-    // console.log("file was written"); 
-    // writeFile("userREADME.md", generateMarkdown({ ...answers }));
-    // })
-    console.log(answers)
+    // Use user feedback for... whatever!!
+    fs.writeFile('./userREADME.md', generateMarkdown(answers), () => {
+      console.log("file was written"); 
+    })
   })
   .catch((error) => {
     if (error) {
+      // Prompt couldn't be rendered in the current environment
       console.log(error); 
-    }
+    } 
   });
 
+// fs.writeFile('./README.md', generateMarkdown(answers), () => {
+//   console.log("file was written"); 
 
-  function writeFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
-  }
+// function writeFile(fileName, data) {
+//   return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+// }
 
