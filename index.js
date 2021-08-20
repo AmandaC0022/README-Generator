@@ -1,11 +1,9 @@
 const inquirer = require('inquirer');
-const fs = require('fs'); 
-const markdownTemplate = require('./utils/generateMarkdown.js'); 
+const fs = require('fs');  
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 inquirer
   .prompt([
-    /* Pass your questions in here */
     {
       type:'input', 
       name: 'title', 
@@ -68,11 +66,6 @@ inquirer
       console.log(error); 
     }
   });
-
-//this will write the README file 
-  // function writeToFile(fileName, data) {
-  //   generateMarkdown(); 
-  // }
 
 //intializes the app
 // funtion init() {

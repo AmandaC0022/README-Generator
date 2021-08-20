@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
 var license = data.license 
 if (license === 'MIT') {
@@ -11,11 +10,11 @@ if (license === 'BSD') {
 if (license === 'GLP') {
   return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`; 
 } 
+// If there is no license, return an empty string
 return ' '; 
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// returns the license link
 function renderLicenseLink(license) {
 var license = data.license 
 if (license === 'MIT') {
@@ -27,6 +26,7 @@ if (license === 'BSD') {
 if (license === 'GLP') {
   return `https://www.gnu.org/licenses/gpl-3.0`; 
 } 
+// If there is no license, return an empty string
 return ' '; 
 }
 
