@@ -59,8 +59,8 @@ inquirer
   .then((answers) => {
     fs.writeFile('./README.md', generateMarkdown(answers), () => {
       console.log("file was written"); 
-    }
-  )
+    })
+    })
   .catch((error) => {
     if (error) {
       console.log(error); 
