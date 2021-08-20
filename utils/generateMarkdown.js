@@ -39,19 +39,20 @@ var license = data.license
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} \n
-  ## Description: \n
-  ${data.description} \n 
-  ## Table of Contents 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
-  - [Contribution](#contribution)
-  - [Tests](#tests)
-  - [Questions](#questions)
+  return `# ${data.title}
+  ## Description: 
+  ${data.description}
 
-  ## Installation \n
+  ## Table of Contents 
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [Credits](#credits)
+  4. [License](#license)
+  5. [Contribution](#contribution)
+  6. [Tests](#tests)
+  7. [Questions](#questions)
+
+  ## Installation <a name="installation"></a> \n 
   ${data.installation} \n 
 
   ## Usage \n 
