@@ -103,7 +103,7 @@ ${data.credits}
 ${renderLicenseLink(data.license)}\n
 ${renderLicenseSection(data.license)}
 
-## Contribution
+## Contributing
 ${data.contributing}
 
 ## Tests 
